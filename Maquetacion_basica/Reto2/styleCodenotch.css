@@ -1,0 +1,299 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Bold 700', sans-serif;
+    font-weight: bold;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 84px;
+    padding: 0% 30%;
+}
+
+    .navbar__logo img{
+        display: flex;
+        height: 80px;
+    }
+
+    .navbar__links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-decoration: none;
+        height: 100%;
+        width: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        color: #979797;
+    }     
+
+        .navbar__links--contacto{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            height: 100%;
+            width: 200px;
+            background-color: blue;
+            margin-left: 15px;
+            
+        }
+
+.cabeceraindex{
+    
+    background-image: url("img/headerbackground.png");
+    height: 820px;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+    .cabeceraindex__parrafo{
+
+        display: flex;
+        flex-direction: column;
+        height: 40%; 
+        justify-content: space-around;
+        align-content: flex-start;
+        margin: 0px 30%;
+        
+    }
+    .cabeceraindex__parrafo span {
+
+        color: #11F294
+
+    }
+        .cabeceraindex__parrafo--parrafo1 {
+
+            padding-right: 25%;
+            font-size: 200%;
+            font-weight: bold;
+        }
+        .cabeceraindex__parrafo--parrafo2{
+
+            padding-right: 25%;
+            font-size: 350%;
+            font-weight: bold;
+        }
+        .cabeceraindex__parrafo--parrafo3 {
+
+            font-size: 150%;
+            font-weight: bold;
+        }
+        
+.aviso{
+    background-color: black;
+    color:white;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+    .aviso__img{
+        height: 40px;
+    }
+            
+.empresas{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.explicacion{
+    background-color: black;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+    padding: 30px 25%
+
+}
+
+    .explicacion h1{
+        font-size: 50px;
+        padding-right: 20%;
+        margin-bottom: 100px;
+    }
+
+    .explicacion_section{
+        display:flex;
+
+    }
+    
+        .explicacion_parrafo{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+            .explicacion_parrafo--parrafo1{
+                font-size: 30px;
+            }
+            .explicacion_parrafo--parrafo2 {
+                font-size: 25px;
+                font-weight: 100;
+            }
+            .explicacion_parrafo--parrafo3 {
+                font-size: 25px;
+                font-weight: 100;
+            }
+
+    .explicacio_cursosintroduccion{
+        display:flex;
+        margin-top: 150px;
+    }
+        .explicacio_cursosintroduccion--titulo{
+            font-size: 60px;
+            margin-right: 100px;
+        }
+        .explicacio_cursosintroduccion--texto {
+            font-size: 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-weight: 100;
+            line-height: 1.5;
+            /* margin-right: 100px; */
+        }
+
+    .explicacio_cursos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 50px;
+        
+    }
+        .explicacio_cursos--web{
+            background-color: white;
+            color:black;
+            padding: 65px;
+            width: 450px;
+            line-height: 1.5;
+        }
+
+            .explicacio_cursos--web--pretext{
+                font-size: 12px;
+            }
+            .explicacio_cursos--web--title {
+                font-size: 28px;
+            }
+            .explicacio_cursos--web--text {
+                font-size: 16px;
+                font-weight: 100;
+                margin-bottom: 10px;
+            }
+            .explicacio_cursos--web--button {
+                padding: 10px 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+                color:white;
+
+            }
+
+        .explicacio_cursos--data {
+            background-color: white;
+                color: black;
+                padding: 65px;
+                width: 450px;
+                line-height: 1.5;
+        }
+
+                .explicacio_cursos--data--pretext {
+                    font-size: 12px;
+                }
+        
+                .explicacio_cursos--data--title {
+                    font-size: 28px;
+                }
+        
+                .explicacio_cursos--data--text {
+                    font-size: 16px;
+                    font-weight: 100;
+                    margin-bottom: 10px;
+                }
+        
+                .explicacio_cursos--data--button {
+                    padding: 10px 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: black;
+                    color: white;
+                }
+    .estudiante{
+        display: flex;
+        flex-direction: row;
+        padding: 20px 30px 40px;
+    }
+        .estudiante__img{
+            width: 60%;
+        }
+
+        .estudiante__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0% 2%;
+        }
+
+            .estudiante__text--up{
+                width: 100%;
+                font-style: italic;
+                font-size: 22px;
+                line-height: 2;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            .estudiante__text--down {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                font-size:18px;
+                font-weight: 100;
+                 
+            }
+
+.footerindex{
+    background-color: black;
+    color: white;
+    padding: 30px 25%;
+    height: fit-content;
+}
+    .footer__info{
+        display: flex;
+        justify-content: space-between;
+    }
+        .footer__logo--img img{
+           height: 80px; 
+        }
+
+        .footer__info--contacto{
+            line-height: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    .footer__bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+   
+    
