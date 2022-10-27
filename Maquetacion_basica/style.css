@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 15px solid #E1E5E0;
+    border-radius: 10px; 
+    margin: 20px;
+    /* padding: 10px; */
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    width: 100vh;
+}
+
+.header{
+    border: 5px solid #A9D7AE;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    height: 10%;
+}
+
+.navbar {
+    border: 5px solid #C0B0B8;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    height: 10%;
+}
+
+.bodytext{
+    display: flex;
+    height: 67%;
+}
+
+    .article {
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: 5px solid #77A4CA;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+        width: 70%;
+    }
+
+        .article__header{
+            
+            border: 5px solid #A9D7AE;
+            border-radius: 10px;
+            padding: 10px;
+            height: 15%;
+
+        }
+            .article__section{
+                border: 5px solid #C3A1C5;
+                border-radius: 10px;
+                justify-content: flex-end;
+                margin-top: 5px;
+                height: 15%;
+            }
+
+            .article__section--primary{
+                margin-top: 40%;
+            }
+
+            .article__footer{
+                border: 5px solid #EEF1CD;
+                border-radius: 10px;
+                justify-content: flex-end;
+                margin-top: 5px
+            }
+
+    .asidemenu {
+        
+        border: 5px solid #E9E0BF;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+        
+        width: 30%;
+    }
+
+        .asidemenu__aside{
+            border: 5px solid #7ED3CF;
+            border-radius: 10px;
+            margin-top: 5px;
+            height: 46%;
+            padding: 10px
+        }
+
+.footer {
+    border: 5px solid #EEF1CD;
+    
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    height: 10%;
+}
+
+
+
+
