@@ -1,0 +1,522 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Bold 700', sans-serif;
+    /* font-weight: bold; */
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 84px;
+    padding: 0% 20%;
+    width: 100%;
+    /* position: fixed;  */                 /*problema con el elemento de abajo al ponerlo*/
+    
+}
+
+    .navbar__logo img{
+        display: flex;
+        height: 80px;
+    }
+
+    .navbar__links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-decoration: none;
+        height: 100%;
+        width: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        color: #979797;
+    }     
+
+        .navbar__links--contacto{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            height: 100%;
+            width: 200px;
+            background-color: blue;
+            /* margin-left: 2%; */
+            
+        }
+
+.cabeceraindex{
+    
+    background-image: url("img/headerbackground.png");
+    height: 820px;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+    .cabeceraindex__parrafo{
+
+        display: flex;
+        flex-direction: column;
+        height: 40%; 
+        justify-content: space-around;
+        align-content: flex-start;
+        margin: 0px 30%;
+        
+    }
+    .cabeceraindex__parrafo span {
+
+        color: #11F294
+
+    }
+        .cabeceraindex__parrafo--parrafo1 {
+
+            padding-right: 25%;
+            font-size: 200%;
+            font-weight: bold;
+        }
+        .cabeceraindex__parrafo--parrafo2{
+
+            padding-right: 25%;
+            font-size: 350%;
+            font-weight: bold;
+        }
+        .cabeceraindex__parrafo--parrafo3 {
+
+            font-size: 150%;
+            font-weight: bold;
+        }
+        
+.aviso{
+    background-color: black;
+    color:white;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+    .aviso__img{
+        height: 40px;
+    }
+            
+.empresas{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.explicacion{
+    background-color: black;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+    padding: 30px 25%
+
+}
+
+    .explicacion h1{
+        font-size: 50px;
+        padding-right: 20%;
+        margin-bottom: 100px;
+    }
+
+    .explicacion_section{
+        display:flex;
+
+    }
+    
+        .explicacion_parrafo{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+            .explicacion_parrafo--parrafo1{
+                font-size: 30px;
+            }
+            .explicacion_parrafo--parrafo2 {
+                font-size: 25px;
+                font-weight: 100;
+            }
+            .explicacion_parrafo--parrafo3 {
+                font-size: 25px;
+                font-weight: 100;
+            }
+
+    .explicacio_cursosintroduccion{
+        display:flex;
+        margin-top: 150px;
+    }
+        .explicacio_cursosintroduccion--titulo{
+            font-size: 60px;
+            margin-right: 100px;
+        }
+        .explicacio_cursosintroduccion--texto {
+            font-size: 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-weight: 100;
+            line-height: 1.5;
+            /* margin-right: 100px; */
+        }
+
+    .explicacio_cursos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 50px;
+        
+    }
+        .explicacio_cursos--web{
+            background-color: white;
+            color:black;
+            padding: 65px;
+            width: 450px;
+            line-height: 1.5;
+        }
+
+            .explicacio_cursos--web--pretext{
+                font-size: 12px;
+            }
+            .explicacio_cursos--web--title {
+                font-size: 28px;
+            }
+            .explicacio_cursos--web--text {
+                font-size: 16px;
+                font-weight: 100;
+                margin-bottom: 10px;
+            }
+            .explicacio_cursos--web--button {
+                padding: 10px 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+                color:white;
+
+            }
+
+        .explicacio_cursos--data {
+            background-color: white;
+                color: black;
+                padding: 65px;
+                width: 450px;
+                line-height: 1.5;
+        }
+
+                .explicacio_cursos--data--pretext {
+                    font-size: 12px;
+                }
+        
+                .explicacio_cursos--data--title {
+                    font-size: 28px;
+                }
+        
+                .explicacio_cursos--data--text {
+                    font-size: 16px;
+                    font-weight: 100;
+                    margin-bottom: 10px;
+                }
+        
+                .explicacio_cursos--data--button {
+                    padding: 10px 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: black;
+                    color: white;
+                }
+    .estudiante{
+        display: flex;
+        flex-direction: row;
+        padding: 20px 30px 40px;
+    }
+        .estudiante__img{
+            width: 60%;
+        }
+
+        .estudiante__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0% 2%;
+        }
+
+            .estudiante__text--up{
+                width: 100%;
+                font-style: italic;
+                font-size: 22px;
+                line-height: 2;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            .estudiante__text--down {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                font-size:18px;
+                font-weight: 100;
+                 
+            }
+
+.footerindex{
+    background-color: black;
+    color: white;
+    padding: 30px 20%;
+    height: fit-content;
+}
+    .footer__info{
+        display: flex;
+        justify-content: space-between;
+    }
+        .footer__logo--img img{
+           height: 80px; 
+        }
+
+        .footer__info--contacto{
+            line-height: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    .footer__bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+.middelbody{
+    min-height: 80vh;
+    height: fit-content;
+    background-image: url("img/headerbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 30%;
+}
+    .cabecera__title{
+        font-size: 50px;
+        margin-bottom: 2%;
+
+    }
+    .cabecera__text {
+        font-size: 26px;
+        margin-bottom: 5%;
+    }
+    .formulario{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+        .input_form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 20px;  
+        }
+        .field_form {
+            width: 60%;
+            color: white;
+            margin: 10px 0px;
+            padding: 5px;
+            border: 0;
+            z-index: 1;
+            background-color: transparent;
+            border-bottom: 2px solid #eee;
+            font: inherit;
+            font-size: 1.125rem;
+            padding: .25rem 0;
+        }
+        ::placeholder{
+            color:white;
+            font-size: 20px;
+        }
+
+        .leido {
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .leido__label {
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: 100;
+        }
+
+        .enviar{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 2% 0%
+        }
+
+            .enviar__boton {
+                margin-top: 20px;
+                min-width: 130px;
+                height: 40px;
+                color: #fff;
+                padding: 5px 10px;
+                font-weight: bold;
+                cursor: pointer;
+                display: inline-block;
+                outline: none;
+                border-radius: 5px;
+                border: none;
+                background: #3d348b;
+                box-shadow: 0 5px #2b156d;
+            }
+
+.cursosmiddle{
+    background-color: blue;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 100;
+
+}
+    .cursosmiddel__scroll{
+        max-width: 70%;
+    }
+
+        .cursosmiddel__scroll--target{
+            background-color: white;
+            padding: 5% 5%;
+            display: flex;
+            
+        }
+
+            .cursosmiddel__scroll--target--explanation{
+                padding: 0px 3%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+                .cursosmiddel__scroll--target--explanation--title{
+                    font-size: 32px;
+                    font-weight: bold;
+                    
+                }
+
+                .cursosmiddel__scroll--target--explanation--cuerpo{
+                    display: flex;
+                    flex-direction: row;                  
+                }
+                    .cursosmiddel__scroll--target--explanation--cuerpo--descripcion{
+                        font-size: 14px;
+                        padding-right: 40px;
+                        line-height: 1.4;
+                    }
+                    .cursosmiddel__scroll--target--explanation--cuerpo--fechas{
+                        
+                        font-size: 22px;
+                        font-weight: bold;
+                    }
+
+                .cursosmiddel__scroll--target--explanation--footer{
+                    display: flex;
+                    justify-content: space-between;
+                    
+                }
+
+                    .cursosmiddel__scroll--target--explanation--footer--plazas{
+                        font-size: 28px;
+                        text-decoration: underline;
+
+                    }
+
+                    .cursosmiddel__scroll--target--explanation--footer--precio{
+                        font-size: 28px;
+                    }
+
+.equipobackground{
+    background-color: white;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+}  
+    .equipo{
+        max-width: 70%;
+        min-width: 60%
+    }
+
+    .equipoprofesores{
+        margin-bottom: 40px;
+    }
+
+            .equipoprofesores__tiutol{
+                font-size: 40px;
+                padding: 40px 0px 60px;
+            }
+
+            .equipoprofesores__cuerpo{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+                .equipoprofesores__cuerpo--profesor{
+                    width: 350px;
+                }
+
+                    .equipoprofesores__cuerpo--profesor--img{
+                        width: 350px;
+                        height: 470px;
+                        margin-bottom: 30px;
+                    }
+
+                    .equipoprofesores__cuerpo--profesor--descripcion{
+                        padding: 0px 10px;
+                    }   
+
+                        .equipoprofesores__cuerpo--profesor--descripcion--puesto{
+                            font-size: 18px;
+                            margin-bottom: 10px;
+                        }
+
+                        .equipoprofesores__cuerpo--profesor--descripcion--nombre {
+                            font-size: 32px;
+                            margin-bottom: 20px;
+                            font-weight: bold;
+                        }
+                        .equipoprofesores__cuerpo--profesor--descripcion--descripcion {
+                            font-size: 16px;
+                            
+                            line-height: 1.6;
+                        }
+                            .equipoprofesores__cuerpo--profesor--descripcion--descripcion p {
+                                
+                                margin-bottom: 20px;
+                                
+                            }
+    .equipocomunicacion__cuerpo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+
