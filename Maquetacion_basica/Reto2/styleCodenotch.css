@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto Bold 700', sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .navbar{
@@ -12,7 +12,10 @@
     align-items: center;
     background-color: black;
     height: 84px;
-    padding: 0% 30%;
+    padding: 0% 20%;
+    width: 100%;
+    /* position: fixed;  */                 /*problema con el elemento de abajo al ponerlo*/
+    
 }
 
     .navbar__logo img{
@@ -40,7 +43,7 @@
             height: 100%;
             width: 200px;
             background-color: blue;
-            margin-left: 15px;
+            /* margin-left: 2%; */
             
         }
 
@@ -272,7 +275,7 @@
 .footerindex{
     background-color: black;
     color: white;
-    padding: 30px 25%;
+    padding: 30px 20%;
     height: fit-content;
 }
     .footer__info{
@@ -295,5 +298,225 @@
         align-items: flex-end;
     }
 
-   
-    
+.middelbody{
+    min-height: 80vh;
+    height: fit-content;
+    background-image: url("img/headerbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 30%;
+}
+    .cabecera__title{
+        font-size: 50px;
+        margin-bottom: 2%;
+
+    }
+    .cabecera__text {
+        font-size: 26px;
+        margin-bottom: 5%;
+    }
+    .formulario{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+        .input_form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 20px;  
+        }
+        .field_form {
+            width: 60%;
+            color: white;
+            margin: 10px 0px;
+            padding: 5px;
+            border: 0;
+            z-index: 1;
+            background-color: transparent;
+            border-bottom: 2px solid #eee;
+            font: inherit;
+            font-size: 1.125rem;
+            padding: .25rem 0;
+        }
+        ::placeholder{
+            color:white;
+            font-size: 20px;
+        }
+
+        .leido {
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .leido__label {
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: 100;
+        }
+
+        .enviar{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 2% 0%
+        }
+
+            .enviar__boton {
+                margin-top: 20px;
+                min-width: 130px;
+                height: 40px;
+                color: #fff;
+                padding: 5px 10px;
+                font-weight: bold;
+                cursor: pointer;
+                display: inline-block;
+                outline: none;
+                border-radius: 5px;
+                border: none;
+                background: #3d348b;
+                box-shadow: 0 5px #2b156d;
+            }
+
+.cursosmiddle{
+    background-color: blue;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 100;
+
+}
+    .cursosmiddel__scroll{
+        max-width: 70%;
+    }
+
+        .cursosmiddel__scroll--target{
+            background-color: white;
+            padding: 5% 5%;
+            display: flex;
+            
+        }
+
+            .cursosmiddel__scroll--target--explanation{
+                padding: 0px 3%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+                .cursosmiddel__scroll--target--explanation--title{
+                    font-size: 32px;
+                    font-weight: bold;
+                    
+                }
+
+                .cursosmiddel__scroll--target--explanation--cuerpo{
+                    display: flex;
+                    flex-direction: row;                  
+                }
+                    .cursosmiddel__scroll--target--explanation--cuerpo--descripcion{
+                        font-size: 14px;
+                        padding-right: 40px;
+                        line-height: 1.4;
+                    }
+                    .cursosmiddel__scroll--target--explanation--cuerpo--fechas{
+                        
+                        font-size: 22px;
+                        font-weight: bold;
+                    }
+
+                .cursosmiddel__scroll--target--explanation--footer{
+                    display: flex;
+                    justify-content: space-between;
+                    
+                }
+
+                    .cursosmiddel__scroll--target--explanation--footer--plazas{
+                        font-size: 28px;
+                        text-decoration: underline;
+
+                    }
+
+                    .cursosmiddel__scroll--target--explanation--footer--precio{
+                        font-size: 28px;
+                    }
+
+.equipobackground{
+    background-color: white;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+}  
+    .equipo{
+        max-width: 70%;
+        min-width: 60%
+    }
+
+    .equipoprofesores{
+        margin-bottom: 40px;
+    }
+
+            .equipoprofesores__tiutol{
+                font-size: 40px;
+                padding: 40px 0px 60px;
+            }
+
+            .equipoprofesores__cuerpo{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+                .equipoprofesores__cuerpo--profesor{
+                    width: 350px;
+                }
+
+                    .equipoprofesores__cuerpo--profesor--img{
+                        width: 350px;
+                        height: 470px;
+                        margin-bottom: 30px;
+                    }
+
+                    .equipoprofesores__cuerpo--profesor--descripcion{
+                        padding: 0px 10px;
+                    }   
+
+                        .equipoprofesores__cuerpo--profesor--descripcion--puesto{
+                            font-size: 18px;
+                            margin-bottom: 10px;
+                        }
+
+                        .equipoprofesores__cuerpo--profesor--descripcion--nombre {
+                            font-size: 32px;
+                            margin-bottom: 20px;
+                            font-weight: bold;
+                        }
+                        .equipoprofesores__cuerpo--profesor--descripcion--descripcion {
+                            font-size: 16px;
+                            
+                            line-height: 1.6;
+                        }
+                            .equipoprofesores__cuerpo--profesor--descripcion--descripcion p {
+                                
+                                margin-bottom: 20px;
+                                
+                            }
+    .equipocomunicacion__cuerpo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+
