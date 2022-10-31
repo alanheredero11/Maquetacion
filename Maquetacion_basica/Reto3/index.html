@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logcompañiablanco.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>EcoTrip</title>
+</head>
+<body>
+    <nav class="Encabezado">
+
+        <div class="titulo">
+            <img src="img/logcompañia.png" class=" titulo__img">
+            <a href="" class="navbar__element">
+            <span class="titulo">EcoTrip</span>
+            </a>
+        </div>
+        <div class="navbar">
+            <a href="" class="navbar__element">Home</a>
+            <a href="" class="navbar__element">Ofertas de Ultima Hora</a>
+            <a href="" class="navbar__element">Atencion al Cliente</a>
+            <div class="navbar__buscador navbar__element">
+                <input type="text" placeholder="Buscar" class="navbar__buscador--text">
+                <input type="image" src="img/lupa.png" class="navbar__buscador--img">
+            </div>    
+            <div class="navbar__usurario navbar__element">
+            <a href="">
+                <img src="img/usericon.png" class="navbar__usurario navbar__usurario--img">
+            </a>
+        </div>
+        </nav>
+    <header class="cabecera">
+        <div class="bienvenida">
+            ¡Bienvenidos a <span class="titulo__text">Ecotrip</span>!
+        </div>
+        <div class="frase">
+            ¿Viajamos?
+        </div>
+    </header>
+    <div class="cuerpo">
+        <div class="cuerpo__filtrado">                                        <!-- onclick="filter_field()"-->
+            <button type="button" class="boton__filtrado">Filtrar</button>
+            <img src="img/icono filtrar.jpg" alt="icono filtrado" class="boton__img">        
+            <div id="busqueda__filtrado">
+
+            </div>    
+        </div>
+        <div class="cuerpo__tarjetas">
+            <div class="tarjeta tarjeta__madrid">
+                <img src="img/madrid.jpg" class="tarjeta__img">
+                <div class="tarjeta__destino">
+                    Madrid
+                </div>
+                <div class="tarjeta__precio">
+                    des de 199€
+                </div>
+            </div>
+            <div class="tarjeta tarjeta__galicia">
+                <img src="img/galicia.jpg" class="tarjeta__img">
+                <div class="tarjeta__destino">
+                    Galicia
+                </div>
+                <div class="tarjeta__precio">
+                    des de 149€
+                </div>
+            </div>
+            <div class="tarjeta tarjeta__barcelona">
+                <img src="img/barcelona.jpg" class="tarjeta__img">
+                <div class="tarjeta__destino">
+                    Barcelona
+                </div>
+                <div class="tarjeta__precio">
+                    des de 129€
+                </div>
+            </div>
+            <div class="tarjeta tarjeta__sevilla">
+                <img src="img/sevilla.jpg" class="tarjeta__img">
+                <div class="tarjeta__destino">
+                    Sevilla
+                </div>
+                <div class="tarjeta__precio">
+                    des de 219€
+                </div>
+            </div>
+            <div class="tarjeta tarjeta__murcia">
+                <img src="img/murcia.jpg" class="tarjeta__img">
+                <div class="tarjeta__destino">
+                    Murcia
+                </div>
+                <div class="tarjeta__precio">
+                    des de 89€
+                </div>
+            </div>
+            <div class="tarjeta tarjeta__marruecos">
+                <img src="img/marruecos.jpg" class="tarjeta__img">
+                <div class="tarjeta__destino">
+                    Marruecos
+                </div>
+                <div class="tarjeta__precio">
+                    des de 139€
+                </div>
+            </div>
+            <div class="tarjeta tarjeta__paris">
+                <img src="img/paris.jpg" class="tarjeta__img">
+                <div class="tarjeta__destino">
+                    Paris
+                </div>
+                <div class="tarjeta__precio">
+                    des de 499€
+                </div>
+            </div>
+            <div class="tarjeta tarjeta__montpellier">
+                <img src="img/montpeller.jpg" class="tarjeta__img">
+                <div class="tarjeta__destino">
+                    Montpellier
+                </div>
+                <div class="tarjeta__precio">
+                    des de 189€
+                </div>
+            </div>
+            <div class="tarjeta tarjeta__tanger">
+                <img src="img/tanger.jpg" class="tarjeta__img">
+                <div class="tarjeta__destino">
+                    Tanger
+                </div>
+                <div class="tarjeta__precio">
+                    des de 259€
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="descripcionEmpresa">
+        <img src="img/logcompañia.png" class="descripcionEmpresa__img">
+        <p>EcoTrip es una empresa que basa su activiad en la premisa de respetar el medio ambiente. Tratamos de poner solución al problema de la generació de contaminacion al momentos de viajar. Contamos con los recursos para poder ofrecer a nuestros clientes la mejores ofertas justo a la seguridad de cuidar nuestro planeta al mismo tiempo. EcoTrip cuenta con 10 años de experiencia en el sector, un equipo experto en ecologia aeronáutica y el mejor servicio de atención al cliente para brindar la mejor experiencia a nuestros usuarios.</p>
+
+    </div>
+    <div class="titulo__form">
+        <p class="titulo__form--text">Deja que te ayudemos:</p>
+    </div>
+    <div class="campoFormulario">
+        <form method="POST" class="formulario">
+            <label for="input__name">Nombre: </label>
+            <input type="text" placeholder="" id="input__name" class="input__form">
+            <label for="input__name">Origen: </label>
+            <input type="text" placeholder="" id="input__origin" class="input__form">
+            <label for="input__name">Destino: </label>
+            <input type="text" placeholder="" id="input__destino" class="input__form">
+            <label for="input__name">Numero de personas: </label>
+            <input type="number" id="input__number" class="input__form">
+            <label for="input__name">Fecha de salida: </label>
+            <input type="date" id="input__date" class="input__form">
+            <div class="botones__filtrado">
+            <button type="button" onclick="printSearch()" class="boton__form">Buscar</button>
+            <button type="button" onclick="import_info()" class="boton__form">Solicitar información</button>
+            </div>
+        </form>
+        <div id="print__search" class="print__search"></div>
+    </div>
+    <!-- <div class="botones__filtrado">
+        <button class="boton__form">Buscar</button>
+        <button class="boton__form">Más información</button>
+    </div> -->
+    <footer class="footer">
+        footer
+    </footer>
+    <script type="module" src="infoclass.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
