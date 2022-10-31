@@ -46,9 +46,12 @@
         </div>
     </header>
     <div class="cuerpo">
-        <div class="cuerpo__filtrado">
+        <div class="cuerpo__filtrado">                                        <!-- onclick="filter_field()"-->
             <button type="button" class="boton__filtrado">Filtrar</button>
-            <img src="img/icono filtrar.jpg" alt="icono filtrado" class="boton__img">
+            <img src="img/icono filtrar.jpg" alt="icono filtrado" class="boton__img">        
+            <div id="busqueda__filtrado">
+
+            </div>    
         </div>
         <div class="cuerpo__tarjetas">
             <div class="tarjeta tarjeta__madrid">
@@ -143,7 +146,7 @@
         <p class="titulo__form--text">Deja que te ayudemos:</p>
     </div>
     <div class="campoFormulario">
-        <form method="post" class="formulario">
+        <form method="POST" class="formulario">
             <label for="input__name">Nombre: </label>
             <input type="text" placeholder="" id="input__name" class="input__form">
             <label for="input__name">Origen: </label>
@@ -155,10 +158,11 @@
             <label for="input__name">Fecha de salida: </label>
             <input type="date" id="input__date" class="input__form">
             <div class="botones__filtrado">
-            <button type="button" class="boton__form">Buscar</button>
-            <button class="boton__form">Más información</button>
+            <button type="button" onclick="printSearch()" class="boton__form">Buscar</button>
+            <button type="button" onclick="import_info()" class="boton__form">Solicitar información</button>
             </div>
         </form>
+        <div id="print__search" class="print__search"></div>
     </div>
     <!-- <div class="botones__filtrado">
         <button class="boton__form">Buscar</button>
@@ -167,6 +171,7 @@
     <footer class="footer">
         footer
     </footer>
-    
+    <script type="module" src="infoclass.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
