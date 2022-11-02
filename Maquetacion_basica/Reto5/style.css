@@ -1,0 +1,146 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.body__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+    .imagen__container{
+        padding-right: 2%;
+    }
+
+    .login__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0% 2%;
+        
+    }
+        .login__inputs{
+            display: flex;
+            flex-direction: column;
+            padding: 16%;
+            margin-bottom: 5%;
+            border: 1px solid #DBDBDB;
+        }
+
+        ::placeholder{
+            font-size: 12px;
+        }
+
+            .logo__instagram--container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 2% 0% 10%;
+            }
+
+        .input__instagram{
+            padding: 4%;
+            margin-bottom: 4%;
+            border: 1px solid #DBDBDB;
+        }       
+
+        .boton__entrar{
+            font-size: 15px;
+            font-weight: bold;
+            padding: 2% 0%;
+            background-color: #0095F6;
+            border: 1px solid #0095F6;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+
+        }
+        
+        .inicio-sesion-facebook{ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3%;
+            font-size: 16px;
+            color: #385FA5;
+            font-weight: bold;
+            cursor: pointer;
+        }               
+
+        .olvidado__contraseña{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+        .img__separacion{
+
+            margin: 10% 0px; 
+        }
+
+                .no__cuenta {
+                    border: 1px solid #DBDBDB;
+                    padding: 10% 15%;
+                    width: 100%;
+                    margin-bottom: 10%;
+                }
+        
+                .no__cuenta span {
+                    color: blue;
+                    cursor: pointer;
+                }
+        
+                .descargar__aplicacion {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0% 15%;
+                    width: 100%;
+                    cursor: pointer;
+                }
+        
+                .descarga__text {
+                    margin-bottom: 6%;
+                }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .link__footer{
+        display: flex;
+        justify-content: center;
+        /* width: 60%; */
+        color: grey;
+        font-size: 12px;
+        margin-bottom: 0.8%;
+        flex-wrap: wrap;
+    }
+
+        .link__footer p{
+            padding: 0% 1% ;
+        }
+
+    .copyright{
+        display: flex;
+        justify-content: center;
+        padding: 0% 25%;
+        color: grey;
+        font-size: 12px;
+    }
+
+@media screen and (max-width: 875px) {
+    .instagram--foto{
+        display: none;
+    }
+    
+}
