@@ -1,0 +1,108 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+}
+
+p{
+    margin-top: 1%;
+    font-size:26px; 
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: "header header imagen"
+                         "menu content content"
+                         "footer footer footer";
+}
+
+    .celdaA{
+        background-color: #B22F00;
+        grid-area: header;
+        color: white;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+    }
+    .celdaB {
+        background-color: #5D1406;
+        grid-area: imagen;
+        color: white;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+    }
+    .celdaC{
+        background-color: #F77B04;
+        grid-area: menu;
+        color: white;
+        height: 80vh;
+                  
+    }
+        .grid1{
+            display: grid;
+            grid-template-areas: "aside "
+                                 "aside1"
+                                 "aside2";
+        }
+            .celdaC__A{
+                grid-area: aside;
+                background-color: white;                
+                color:orange;
+                /* height: 90%;
+                width: 90%; */
+                display: flex;
+                justify-content: center;
+                margin: 5%;
+            }
+            .celdaC__B{
+                background-color: white;
+                grid-area: aside2;
+                color: orange;
+                /* height: 90%;
+                width: 90%; */
+                display: flex;
+                justify-content: center;
+                margin: 5%;
+                
+            }
+
+    .celdaD{
+        background-color: #F65004;
+        grid-area: content;
+        color: white;
+        height: 80vh;
+    }
+
+        .grid2{
+            display: grid;
+            grid-template-areas: "contenido"
+                                 "texto";
+        }
+            .celdaD__A{
+                
+                grid-area: contenido;
+                border: 2px solid white;
+                color: white;
+                display: flex;
+                justify-content: center;
+                margin: 2.5% 2.5% 0.5% 2.5%; 
+            }
+            .celdaD__B {
+
+                grid-area: texto;
+                border: 2px solid white;
+                color: white;
+                display: flex;
+                justify-content: center;
+                margin: 0.5% 2.5% 2.5% 2.5%;
+            }
+
+    .celdaE{
+        background-color: #5D1406;
+        grid-area: footer;
+        color: white;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+    }

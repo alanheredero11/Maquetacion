@@ -1,0 +1,164 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+    font-size: 40px;
+}
+
+p {
+    padding: 2%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+    grid-template-rows: [y0] 1fr [y1] 6fr [y2] 1fr [y3];
+    height: 100vh;
+}
+
+.celdaA{
+    background-color: black;
+    color: white;
+    grid-column: x0/x4;
+    grid-row: y0/y1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.celdaB {
+    background-color: blue;
+    color: white;
+    grid-column: x0/x3;
+    grid-row: y1/y2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+    .grid1{
+        display: grid;
+        grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+        grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+        padding: 2%;
+    }
+
+        .celdaB__A{
+            border: 1px solid white;
+            grid-column: x0/x3;
+            grid-row: y0/y1;
+            margin-bottom: 2%;
+            height: 100%;            
+        }
+
+        .celdaB__B {
+            border: 1px solid white;
+            grid-column: x0/x2;
+            grid-row: y1/y3;
+            height: 100%;
+            margin-right: 2%;
+        }
+
+        .celdaB__C {
+            border: 1px solid white;
+            grid-column: x2/x3;
+            grid-row: y1/y3;
+            height: 100%;
+        }
+
+.celdaC {
+    background-color: rgb(73, 187, 102);
+    color: white;
+    grid-column: x3/x4;
+    grid-row: y1/y2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .grid2{
+        display: grid;
+        grid-template-columns: [x0] 1fr [x1];
+        grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4];
+        padding: 2% 5%;
+    }
+
+        .celdaC__A{
+            border: 3px solid black;
+            grid-column: x0/x1;
+            grid-row: y0/y1;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .celdaC__B {
+            background-color: black;
+            border: 1px solid black;
+            grid-column: x0/x1;
+            grid-row: y1/y2;
+            height: 90%;
+            margin-bottom: 2%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .celdaC__C {
+            background-color: black;
+            border: 1px solid black;
+            grid-column: x0/x1;
+            grid-row: y2/y3;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .celdaC__D {
+            background-color: black;
+            border: 1px solid black;
+            grid-column: x0/x1;
+            grid-row: y3/y4;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+.celdaD {
+    background-color: rgb(25, 57, 128);
+    color: white;
+    grid-column: x0/x4;
+    grid-row: y2/y3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+    .grid3{
+        display: grid;
+            grid-template-columns: [x0] 1fr [x1] 1fr[x2];
+            grid-template-rows: [y0] 1fr [y1];
+            padding: 0.8%;
+    }
+        .celdaD__A {
+            border: 3px solid black;
+            grid-column: x0/x1;
+            grid-row: y0/y1;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 99%;
+        }
+
+        .celdaD__B {
+            border: 3px solid black;
+            grid-column: x1/x2;
+            grid-row: y0/y1;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 99%;
+        }
