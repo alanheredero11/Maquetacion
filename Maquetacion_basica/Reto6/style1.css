@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    height: 100vh;
+}
+
+.celdaA{
+    background-color: #ADFF2E;
+    color: white;
+    text-align: center;
+}
+.celdaB {
+    background-color: #F8A502;
+    color: white;
+    text-align: center;
+}
+.celdaC {
+    background-color: #F77202;
+    color: white;
+        text-align: center;
+}
+.celdaD {
+    background-color: #F62E00;
+    color: white;
+        text-align: center;
+}
+.celdaE {
+    background-color: #2B05FF;
+    color: white;
+        text-align: center;
+}
+.celdaF {
+    background-color: #FCFF00;
+    color: white;
+        text-align: center;
+}
