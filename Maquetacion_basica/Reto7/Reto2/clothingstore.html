@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Home</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid">
+        <div class="container-fluid" >
             <a class="navbar-brand" href="#">
                 <img src="img/logo-Bershka.png" alt="logo__company" style="height: 60px; filter: invert(100%);">
-            </a>
-            
+            </a>            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -36,11 +36,108 @@
                         </ul>
                     </li>
                 </ul>  
-                <button class="btn btn-outline-white bg-light" type="button">Carrito</button>
-                
+                <button class="btn btn-outline-white bg-light" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="carritoCompra" onclick="bodyCarrito()">Carrito</button>
             </div>
         </div>
     </nav>
+    <div class="container mt-5 " id="cuerpo">
+        <div class="d-flex  flex-wrap justify-content-center">
+
+            <div class="col-2 border border-info w-25 ms-5 me-5 mb-5 " id="prenda1">
+                <!-- <div class="bg-image hover-zoom">                          no funciona-->                  
+                    <img src="img/prenda1.png" class="w-100"/>
+                <!-- </div> -->
+                <div class="pt-3 ps-3 pe-3">
+                    <p class="fw-bold mt-3" id="prenda1Nombre">Conjunto Blanco</p>
+                    <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe repellat cum officia aspernatur fuga eum obcaecati, sint magnam suscipit dolor! Nesciunt veniam aut soluta, accusamus sunt suscipit! Aliquam, expedita.</p>
+                    <p id="prenda1Precio">89<span>€</span></p>
+                </div>
+                <button class="btn btn-dark mb-2 ms-3 mb-3 " onclick='addCarrito("prenda1")'>Añadir al carrito</button>
+            </div>
+
+            <div class="col-2 border border-info w-25 ms-5 me-5 mb-5" id="prenda2">
+                <img src="img/prenda2.png" class="w-100">
+                <div class="pt-3 ps-3 pe-3">
+                    <p class="fw-bold mt-3" id="prenda2Nombre">Conjunto Invierno</p>
+                    <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe repellat cum officia
+                        aspernatur fuga eum obcaecati, sint magnam suscipit dolor! Nesciunt veniam aut soluta, accusamus sunt
+                        suscipit! Aliquam, expedita.</p>
+                    <p id="prenda2Precio">99<span>€</span></p>
+                </div>
+                <button class="btn btn-dark mb-2 ms-3 mb-3" onclick='addCarrito("prenda2")'>Añadir al carrito</button>
+            </div>
+
+            <div class="col-2 border border-info w-25 ms-5 me-5 mb-5" id="prenda3">
+                <img src="img/prenda3.png" class="w-100">
+                <div class="pt-3 ps-3 pe-3">
+                    <p class="fw-bold mt-3" id="prenda3Nombre">Sudadera Mid</p>
+                    <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe repellat cum officia
+                        aspernatur fuga eum obcaecati, sint magnam suscipit dolor! Nesciunt veniam aut soluta, accusamus sunt
+                        suscipit! Aliquam, expedita.</p>
+                    <p id="prenda3Precio">259<span>€</span></p>
+                </div>
+                <button class="btn btn-dark mb-2 ms-3 mb-3" onclick='addCarrito("prenda3")'>Añadir al carrito</button>
+            </div>
+
+            <div class="col-2 border border-info w-25 ms-5 me-5 mb-5" id="prenda4">
+                <img src="img/prenda4.png" class="w-100">
+                <div class="pt-3 ps-3 pe-3">
+                    <p class="fw-bold mt-3" id="prenda4Nombre">Pantalones anchos</p>
+                    <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe repellat cum officia
+                        aspernatur fuga eum obcaecati, sint magnam suscipit dolor! Nesciunt veniam aut soluta, accusamus sunt
+                        suscipit! Aliquam, expedita.</p>
+                    <p id="prenda4Precio">119<span>€</span></p>
+                </div>
+                <button class="btn btn-dark mb-2 ms-3 mb-3" onclick='addCarrito("prenda4")'>Añadir al carrito</button>
+            </div>
+
+            <div class="col-2 border border-info w-25 ms-5 me-5 mb-5" id="prenda5">
+                <img src="img/prenda5.png" class="w-100">
+                <div class="pt-3 ps-3 pe-3">
+                    <p class="fw-bold mt-3" id="prenda5Nombre">Camista ancha</p>
+                    <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe repellat cum officia
+                        aspernatur fuga eum obcaecati, sint magnam suscipit dolor! Nesciunt veniam aut soluta, accusamus sunt
+                        suscipit! Aliquam, expedita.</p>
+                    <p id="prenda5Precio">59<span>€</span></p>
+                </div>
+                <button class="btn btn-dark mb-2 ms-3 mb-3" onclick='addCarrito("prenda5")'>Añadir al carrito</button>
+            </div>
+
+            <div class="col-2 border border-info w-25 ms-5 me-5 mb-5" id="prenda6">
+                <img src="img/prenda6.png" class="w-100">
+                <div class="pt-3 ps-3 pe-3">
+                    <p class="fw-bold mt-3" id="prenda6Nombre">Gorro y camisa</p>
+                    <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe repellat cum officia
+                        aspernatur fuga eum obcaecati, sint magnam suscipit dolor! Nesciunt veniam aut soluta, accusamus sunt
+                        suscipit! Aliquam, expedita.</p>
+                    <p id="prenda6Precio">79<span>€</span></p>
+                </div>
+                <button class=" btn btn-dark mb-2 ms-3 mb-3" onclick='addCarrito("prenda6")' >Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Añadido al Carrito</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="bodycarrito">
+                    No hay nada en tu carrito de compra
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <p id="totalprice"></p>
+                    <div>
+                    <button type="button" class="btn btn-secondary" onclick="reset()">Reset</button>
+                    <button type="button" class="btn btn-dark">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
@@ -50,5 +147,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
         crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
