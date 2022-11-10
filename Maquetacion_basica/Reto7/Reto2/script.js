@@ -8,7 +8,7 @@ function addCarrito(prendaID){
     carrito.push(compra);
 
     // alert("Producto Añadido al Carrito")
-    // document.getElementById("cuerpo").innerHTML = '<img src="img/check.png" class="h-100"> '
+    document.getElementById("cuerpo").innerHTML = '<img src="img/check.png" class="h-100"> '
     
 }
 
